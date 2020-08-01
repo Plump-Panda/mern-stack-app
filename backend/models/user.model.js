@@ -12,3 +12,8 @@ const userSchema = new Schema({
 }, {
     timestamps: true,
 });
+
+//Compile model from schema
+const Users = mongoose.model('Users', userSchema);
+
+module.exports = Users;

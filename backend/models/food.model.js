@@ -13,6 +13,7 @@ const foodSchema = new Schema({
     timestamps: true,
 });
 
-const Food = mongooes.model('Food', foodSchema);
+//Compile model from schema
+const Food = mongoose.model('Food', foodSchema);
 
 module.exports = Food;
