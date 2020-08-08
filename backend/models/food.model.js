@@ -7,7 +7,8 @@ const foodSchema = new Schema({
     description: { type: String, required: true },
     timeToCook: { type: Number, required: true },
     ingrediants: {type: [String], required: true},
-    amount: [{number: {type: Number, required: true}, unit: {type: String, required: true}}],
+    amount: {type: [Number], required: true},
+    unit: {type: [String], required: true},
     date: { type: Date, required: true },
 }, {
     timestamps: true,
